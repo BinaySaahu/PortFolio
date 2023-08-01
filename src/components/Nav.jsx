@@ -29,7 +29,7 @@ function Nav(props) {
       <div className="w-1/3 pl-5">
         <h2>
           <Link
-            href={`#${props.id1}`}
+            href={`https://binaykumarsahu.netlify.app/#${props.id1}`}
             className="text-[20px] text-violet-600 cursor-pointer w-fit"
           >
             Binay
@@ -38,31 +38,31 @@ function Nav(props) {
       </div>
       <div className="flex w-1/3 justify-between">
         <Link
-          href={`#${props.id1}`}
+          href={`https://binaykumarsahu.netlify.app/#${props.id1}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Home</p>
         </Link>
         <Link
-          href={`#${props.id2}`}
+          href={`https://binaykumarsahu.netlify.app/#${props.id2}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Skills</p>
         </Link>
         <Link
-          href={`#${props.id3}`}
+          href={`https://binaykumarsahu.netlify.app/#${props.id3}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Projects</p>
         </Link>
         <Link
-          href={`#${props.id4}`}
+          href={`https://binaykumarsahu.netlify.app/#${props.id4}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Contact</p>
         </Link>
         <Link
-          href={`#${props.id5}`}
+          href={`https://binaykumarsahu.netlify.app/#${props.id5}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>About</p>

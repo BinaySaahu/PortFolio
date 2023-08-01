@@ -90,7 +90,7 @@ export default function Home() {
         <ul className="h-3/4 w-full flex flex-col justify-around items-center">
           <li className="nav_li" onClick={() => setActive(!active)}>
             <Link
-              href={`#1st`}
+              href={`https://binaykumarsahu.netlify.app/#1st`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Home</p>
@@ -98,7 +98,7 @@ export default function Home() {
           </li>
           <li onClick={() => setActive(!active)}>
             <Link
-              href={`#2nd`}
+              href={`https://binaykumarsahu.netlify.app/#2nd`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Skills</p>
@@ -106,7 +106,7 @@ export default function Home() {
           </li>
           <li onClick={() => setActive(!active)}>
             <Link
-              href={`#3rd`}
+              href={`https://binaykumarsahu.netlify.app/#3rd`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Projects</p>
@@ -114,7 +114,7 @@ export default function Home() {
           </li>
           <li onClick={() => setActive(!active)}>
             <Link
-              href={`#4th`}
+              href={`https://binaykumarsahu.netlify.app/#4th`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Contact</p>
@@ -122,7 +122,7 @@ export default function Home() {
           </li>
           <li onClick={() => setActive(!active)}>
             <Link
-              href={`#5th`}
+              href={`https://binaykumarsahu.netlify.app/#5th`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>About</p>
@@ -303,7 +303,7 @@ export default function Home() {
             >
               {projects.map((project, idx) => (
                 <SwiperSlide>
-                  <ProjectSlider project={project} />
+                  <ProjectSlider project={project} key={idx}/>
                 </SwiperSlide>
               ))}
             </Swiper>

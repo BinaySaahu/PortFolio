@@ -40,7 +40,7 @@ function MoboNav(props) {
         <div className="w-1/3 pl-5 text-center">
           <h2>
             <Link
-              href={`#${props.id1}`}
+              href={`https://binaykumarsahu.netlify.app/#${props.id1}`}
               className="text-[20px] text-violet-600 cursor-pointer w-fit"
             >
               Binay
