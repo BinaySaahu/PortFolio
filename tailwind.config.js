@@ -22,10 +22,10 @@ module.exports = {
       backgroundColor:{
         'secondary':'rgb(245 245 245);',
         'contact_bg':'#c7c7c7',
-        'overlay': 'rgb(1 1 1 / 73%);'
+        'overlay': 'rgb(1 1 1 / 73%)'
       },
       boxShadow:{
-        'boxShadow':'rgba(0, 0, 0, 0.24) 0px 3px 8px;'
+        'boxShadow':'rgba(0, 0, 0, 0.24) 0px 3px 8px'
       },
     },
   },
