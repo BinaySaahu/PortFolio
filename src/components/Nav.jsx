@@ -6,14 +6,17 @@ import Link from "next/link";
 
 function Nav(props) {
   const [scroll, setSroll] = useState(false);
-  const handleChange = () => {
+
+  useEffect(() => {
+    const handleChange = ()=>{
     if (window.scrollY >= 40) {
       setSroll(true);
     } else {
       setSroll(false);
     }
-  };
-  window.addEventListener("scroll", handleChange);
+  }
+    window.addEventListener("scroll", handleChange);
+})
 
   return (
     <div
