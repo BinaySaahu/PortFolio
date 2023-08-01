@@ -47,13 +47,6 @@ export default function Home() {
 
   const slideRef = useRef();
 
-  const handleNext = () => {
-    slideRef.current.swiper.slideNext();
-  };
-  const handlePrev = () => {
-    slideRef.current.swiper.slidePrev();
-  };
-
   const form = useRef();
 
   const sendEmail = async (e) => {

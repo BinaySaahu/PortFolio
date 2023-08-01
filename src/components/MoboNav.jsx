@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import Link from "next/link";
@@ -8,14 +8,16 @@ import { motion } from "framer-motion";
 function MoboNav(props) {
   const [scroll, setSroll] = useState(false);
   
-  const handleChange = () => {
-    if (window.scrollY >= 40) {
-      setSroll(true);
-    } else {
-      setSroll(false);
-    }
-  };
-  window.addEventListener("scroll", handleChange);
+  useEffect(() => {
+    const handleChange = () => {
+      if (window.scrollY >= 40) {
+        setSroll(true);
+      } else {
+        setSroll(false);
+      }
+    };
+    window.addEventListener("scroll", handleChange);
+  });
   return (
     <>
       <div
