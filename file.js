@@ -1,2 +1,2 @@
-// export const BASE_URL = "${BASE_URL}"
-export const BASE_URL = "http://localhost:3000"
+export const BASE_URL = "https://binaykumarsahu.netlify.app"
+// export const BASE_URL = "http://localhost:3000"
