@@ -230,7 +230,7 @@ export default function Home() {
           </div>
 
           <motion.div
-            className="min-w-11/12 flex justify-center"
+            className="min-w-11/12 flex justify-center w-full"
             initial="hidden"
             whileInView="visible"
             variants={
@@ -317,7 +317,7 @@ export default function Home() {
         </div>
         {/* contact */}
         <div
-          className="flex w-screen bg-violet-600 justify-center items-center md:px-28 py-10 h-[100vh] flex-col md:flex-row"
+          className="flex w-screen bg-violet-600 justify-center items-center md:px-28 py-10 md:h-screen h-fit flex-col md:flex-row"
           id="4th"
         >
           <div className="w-full md:w-1/2 flex">
