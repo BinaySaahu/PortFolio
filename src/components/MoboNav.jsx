@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { BASE_URL } from "../../file";
 
 function MoboNav(props) {
   const [scroll, setSroll] = useState(false);
@@ -23,8 +24,8 @@ function MoboNav(props) {
       <div
         className={
           scroll
-            ? "z-10 flex md:hidden justify-between fixed w-full bg-white text-[#555555] font-bold text-[16px] font-poppins items-center p-2 shadow-boxShadow bg-secondary"
-            : "flex md:hidden justify-between fixed w-full text-[#555555] font-bold text-[16px] font-poppins items-center p-2 z-10 bg-secondary"
+            ? "z-10 flex md:hidden justify-between fixed top-0 left-0 w-full bg-white text-[#555555] font-bold text-[16px] font-poppins items-center p-2 shadow-boxShadow bg-secondary"
+            : "flex md:hidden justify-between fixed top-0 left-0 w-full text-[#555555] font-bold text-[16px] font-poppins items-center p-2 z-10 bg-secondary"
         }
       >
         <div
@@ -39,12 +40,12 @@ function MoboNav(props) {
       </div> */}
         <div className="w-1/3 pl-5 text-center">
           <h2>
-            <Link
-              href={`https://binaykumarsahu.netlify.app/#${props.id1}`}
+            <a
+              href={`${BASE_URL}/#${props.id1}`}
               className="text-[20px] text-violet-600 cursor-pointer w-fit"
             >
               Binay
-            </Link>
+            </a>
           </h2>
         </div> 
 

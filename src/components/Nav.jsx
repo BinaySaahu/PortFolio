@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import FileDownloadOutlinedIcon from "@mui/icons-material/FileDownloadOutlined";
 import Link from "next/link";
+import { BASE_URL } from "../../file";
 
 function Nav(props) {
   const [scroll, setSroll] = useState(false);
@@ -22,51 +23,51 @@ function Nav(props) {
     <div
       className={
         scroll
-          ? "z-10 md:flex hidden justify-between fixed w-full bg-white text-[#555555] font-bold text-[16px] font-poppins items-center p-2 shadow-boxShadow"
-          : "md:flex hidden justify-between fixed w-full text-[#555555] font-bold text-[16px] font-poppins items-center p-2 z-10"
+          ? "z-10 md:flex hidden justify-between fixed w-full top-0 left-0 bg-white text-[#555555] font-bold text-[16px] font-poppins items-center p-2 shadow-boxShadow"
+          : "md:flex hidden justify-between fixed top-0 left-0 w-full text-[#555555] font-bold text-[16px] font-poppins items-center p-2 z-10"
       }
     >
       <div className="w-1/3 pl-5">
         <h2>
-          <Link
-            href={`https://binaykumarsahu.netlify.app/#${props.id1}`}
+          <a
+            href={`${BASE_URL}/#${props.id1}`}
             className="text-[20px] text-violet-600 cursor-pointer w-fit"
           >
             Binay
-          </Link>
+          </a>
         </h2>
       </div>
       <div className="flex w-1/3 justify-between">
-        <Link
-          href={`https://binaykumarsahu.netlify.app/#${props.id1}`}
+        <a
+          href={`${BASE_URL}/#${props.id1}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Home</p>
-        </Link>
-        <Link
-          href={`https://binaykumarsahu.netlify.app/#${props.id2}`}
+        </a>
+        <a
+          href={`${BASE_URL}/#${props.id2}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Skills</p>
-        </Link>
-        <Link
-          href={`https://binaykumarsahu.netlify.app/#${props.id3}`}
+        </a>
+        <a
+          href={`${BASE_URL}/#${props.id3}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Projects</p>
-        </Link>
-        <Link
-          href={`https://binaykumarsahu.netlify.app/#${props.id4}`}
+        </a>
+        <a
+          href={`${BASE_URL}/#${props.id4}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>Contact</p>
-        </Link>
-        <Link
-          href={`https://binaykumarsahu.netlify.app/#${props.id5}`}
+        </a>
+        <a
+          href={`${BASE_URL}/#${props.id5}`}
           className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
         >
           <p>About</p>
-        </Link>
+        </a>
       </div>
       <div className="w-1/3 flex justify-end pr-5">
         <a href="/resume/Resume.pdf" download="Binay Kumar Sahu resume">

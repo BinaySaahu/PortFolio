@@ -6,8 +6,6 @@ import Image from "next/image";
 import SkillCards from "@/components/SkillCards";
 import { info } from "./info";
 import { projects } from "./projects";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import HomeIcon from "@mui/icons-material/Home";
 import PhoneIcon from "@mui/icons-material/Phone";
 import MailIcon from "@mui/icons-material/Mail";
@@ -16,6 +14,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { BASE_URL } from "../../file";
 
 import { useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -89,44 +88,44 @@ export default function Home() {
       <div className={active ? "activeSideNav" : "sideNav"}>
         <ul className="h-3/4 w-full flex flex-col justify-around items-center">
           <li className="nav_li" onClick={() => setActive(!active)}>
-            <Link
-              href={`https://binaykumarsahu.netlify.app/#1st`}
+            <a
+              href={`${BASE_URL}/#1st`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Home</p>
-            </Link>
+            </a>
           </li>
           <li onClick={() => setActive(!active)}>
-            <Link
-              href={`https://binaykumarsahu.netlify.app/#2nd`}
+            <a
+              href={`${BASE_URL}/#2nd`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Skills</p>
-            </Link>
+            </a>
           </li>
           <li onClick={() => setActive(!active)}>
-            <Link
-              href={`https://binaykumarsahu.netlify.app/#3rd`}
+            <a
+              href={`${BASE_URL}/#3rd`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Projects</p>
-            </Link>
+            </a>
           </li>
           <li onClick={() => setActive(!active)}>
-            <Link
-              href={`https://binaykumarsahu.netlify.app/#4th`}
+            <a
+              href={`${BASE_URL}/#4th`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>Contact</p>
-            </Link>
+            </a>
           </li>
           <li onClick={() => setActive(!active)}>
-            <Link
-              href={`https://binaykumarsahu.netlify.app/#5th`}
+            <a
+              href={`${BASE_URL}/#5th`}
               className={`hover:text-violet-600 cursor-pointer transition-all duration-300`}
             >
               <p>About</p>
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
